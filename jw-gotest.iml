@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="GO_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Python" name="Python">
+      <configuration sdkName="Python 2.7.12 (C:\Python27\python.exe)" />
+    </facet>
+  </component>
   <component name="Go">
     <buildTags>
       <option name="cgo" value="YES" />
@@ -12,5 +17,6 @@
     <orderEntry type="jdk" jdkName="Go 1.8beta1" jdkType="Go SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="GOPATH &lt;jw-gotest&gt;" level="project" />
+    <orderEntry type="library" name="Python 2.7.12 (C:\Python27\python.exe) interpreter library" level="application" />
   </component>
 </module>

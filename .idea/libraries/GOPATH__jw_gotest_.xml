@@ -14,7 +14,6 @@
       <root url="file://C:/Go/src/expvar" />
       <root url="file://C:/Go/src/internal" />
       <root url="file://C:/Go/src/bytes" />
-      <root url="file://C:/Go/src/plugin" />
       <root url="file://C:/Go/src/mime" />
       <root url="file://C:/Go/src/time" />
       <root url="file://C:/Go/src/container" />
@@ -61,7 +60,6 @@
       <root url="file://C:/Go/src/expvar" />
       <root url="file://C:/Go/src/internal" />
       <root url="file://C:/Go/src/bytes" />
-      <root url="file://C:/Go/src/plugin" />
       <root url="file://C:/Go/src/mime" />
       <root url="file://C:/Go/src/time" />
       <root url="file://C:/Go/src/container" />
