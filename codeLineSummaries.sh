@@ -5,14 +5,15 @@ seldate=`date -d "1 weeks ago" +%Y-%m-%d`
 echo " the current date is ->$seldate"
 cd /E/IDEidea/IdeaProjects
 projectname=jw-source
-echo " the project name is ->$projectname"
+sourceextession=.java
+echo " the project name is ->$projectname-$sourceextession"
 pwd
-annonumbner=`find $projectname -name "*.java"|xargs cat|grep -v ^$|wc -l`    #Output:36335
-# exclude the lines begin with //  
-#noannonumbner=find . -name "*.java"|xargs cat|grep -v -e ^$ -e ^\s*\/\/.*$|wc -l    #Output:36064 
-noannonumbner=`find $projectname -name *.java | xargs cat | grep -v -e ^$ -e ^\s*\/\/.*$ | wc -l`
-echo $annonumbner
-echo $noannonumbner
+annonumbner=`find $projectname -name "*$sourceextession" |xargs cat | grep -v ^$|wc -l`    #Output:36335
+# exclude the lines begin with //
+#noannonumbner=find . -name "*.java"|xargs cat|grep -v -e ^$ -e ^\s*\/\/.*$|wc -l    #Output:36064
+noannonumbner=`find $projectname -name *$sourceextession | xargs cat | grep -v -e ^$ -e ^\s*\/\/.*$ | wc -l`
+echo " the project has annotation codeline is ->$annonumbner"
+echo " the project has no annotation codeline is ->$noannonumbner"
 
 percent_1=$(printf "%d%%" $((noannonumbner*100/annonumbner)))
 # no 0.1
